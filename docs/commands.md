@@ -208,6 +208,8 @@ This tool is useful for parallelising across array jobs / distributed systems.
     The categories column header in the custom TSV file [default value: 'barcode_arrangement']. Use with option `--demux`.
 *  `--demux-rid STR`:<br/>
     The read IDs column header in the custom TSV file [default value: 'parent_read_id']. Use with option `--demux`.
+*  `-u, --demux-uniq STR`:<br/>
+    Write each read once and place multi-category reads into a new category named STR. Use with option `--demux`.
 *   `--lossless STR`:<br/>
     Retain information in auxilliary fields during file merging [default value: true]. This information is generally not required for downstream analysis can be optionally discarded to reduce filesize. *IMPORTANT: Generated files are only to be used for intermediate analysis and NOT for archiving. You will not be able to convert lossy files back to FAST5*.
 *  `-t, --threads INT`:<br/>
